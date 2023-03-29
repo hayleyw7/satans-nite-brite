@@ -1,4 +1,4 @@
-# Satan's Nite Brite
+# Satan's Nite-Brite
 
 This app gives provides the user with an interactive, Satantic-themed Lite-Brite.
 

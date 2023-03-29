@@ -1,7 +1,7 @@
 /* general  */
 
 body {
-  margin: 60px 4px 4px 4px;
+  margin-top: 3.25rem;
   box-sizing: border-box;
   text-align: center;
 	background-color: black;
@@ -19,7 +19,7 @@ body {
 .dot,
 .color-option,
 .erase {
-	 cursor: pointer;
+	cursor: pointer;
 }
 
 /* headings */
@@ -28,7 +28,7 @@ h1 {
 	margin-top: 1rem;
 	margin-bottom: -1rem;
 	color: #E71E02;
-	font-size: 45px;
+	font-size: 2.75rem;
   font-family: 'Brush Script MT', cursive;
 }
 
@@ -36,18 +36,18 @@ h2 {
 	margin-top: 0.8rem;
 	margin-bottom: 1rem;
 	color: #F8A42F;
-	font-size: 25px;
+	font-size: 1.5rem;
 }
 
 /* dots */
 
 .dot-container { 
   background: black;
-  padding: 20px 10px 20px 10px;
-  border-radius: 5px;
-  margin: 10px auto;
-	width: 280px;
-
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  /* border-radius: 5px; */
+  margin: auto;
+	margin-bottom: 0.5rem;
+	width: 17.5rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -55,9 +55,9 @@ h2 {
 }
 
 .dot {
-  height: 20px;
-  width: 20px;
-  margin: 3px;
+  height: 1.25rem;
+  width: 1.25rem;
+  margin: 0.2rem;
   background: rgb(70,70,70);
   border-radius: 50%;
 }
@@ -68,24 +68,24 @@ h2 {
 
 .controls {
   margin: auto;
-  border-radius: 5px;
-  padding: 10px;
+  /* border-radius: 0.5rem; */
+  padding: 0.5rem;
   display: flex;
   justify-content: center;
-	width: 390px;
+	width: 25rem;
 }
 
 /* swatches */
 
 .color-option {
-  border-radius: 5px;
-  border: 2.5px solid black;
+  border-radius: 0.4rem;
+  border: 0.2rem solid black;
   flex-grow: 1;
-  height: 30px;
+  height: 1.8rem;
 }
 
 .selected-color {
-  border: 2.5px solid white;
+  border: 0.15rem solid gray;
 }
 
 .color-1 { background: #FFD729; }
@@ -107,38 +107,36 @@ h2 {
 /* color picker */
 
 .color-picker {
-	margin-top: -1px;
-	height: 35px;
+	margin-top: -0.5;
+	height: 2.2rem;
 	background: black;
   flex-grow: 0;
-	border-radius: 500px;
-	margin-right: 5px;
+	border-radius: 1rem;
+	margin-right: 0.4rem;
+	padding: 0;
 }
 
 input[type="color"]::-webkit-color-swatch-wrapper {
-	width: 28px;
+	width: 1.9rem;
 	padding: 0;
-	margin: 0 2px 0 0;
 }
 
 input[type="color"]::-webkit-color-swatch {
-  border-radius: 50px;
+  border-radius: 50rem;
 	border: rgb(70,70,70);
-	margin: -0.75px;
 }
 
 input[type="color" i] {
-	width: 35px;
-	padding-left: 1.2px;
-	border-radius: 50px;
+	width: 2.15rem;
+	border-radius: 50rem;
 }
 
 /* erase */
 
 .erase {
-	margin: -10px 0 0 0;
+	margin: -0.45rem 0 0 -0.1rem;
 	padding: 0;
-	font-size: 44px;
+	font-size: 2.5rem;
 }
 
 /* ERRORS */
@@ -150,6 +148,20 @@ input[type="color" i] {
 .error {
 	color: #E71E02;
 	font-weight: bold;
-	font-size: 29px;
+	font-size: 1.5rem;
 	margin-top: 0;
+}
+
+/* PHONES */
+
+@media only screen and (min-width: 800px) {
+	h1, h2,
+	.dot-container,
+	.controls {
+		zoom: 2;
+	}
+	.erase {
+		margin: 0.275rem 0 0 0.35rem;
+		zoom: 0.65;
+	}
 }
